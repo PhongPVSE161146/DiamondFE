@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Plans</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f0f0f0;
+        }
+        .navbar {
+            background-color: white;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .navbar-brand img {
+            height: 40px;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .card-header {
+            background-color: white;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .card {
+            margin-top: 20px;
+        }
+        .list-group-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .btn-inspect {
+            background-color: #6c5ce7;
+            color: white;
+        }
+        .btn-note {
+            background-color: #28a745;
+            color: white;
+        }
+        .btn-cancel {
+            background-color: #dc3545;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="logo.png" alt="Logo">
+        </a>
+        <div class="ml-auto d-flex align-items-center">
+            <span class="navbar-text mr-3">Inventory Plans</span>
+            <i class="fas fa-cog mr-3"></i>
+            <i class="fas fa-bell mr-3"></i>
+            <i class="fas fa-user-circle"></i>
+        </div>
+    </nav>
+    <button type="submit"><img src="home.png" width="30px;"></button>
+    <div class="container">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <span>Total Sample need to assessment:</span>
+                    <input type="text" class="form-control ml-2" value="4" style="width: 50px;">
+                </div>
+            </div>
+            <div class="container mt-3">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Số thứ tự</th>
+                            <th>Tên</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                            <th>Note</th>
+                            <th>Cancel</th>
+                        </tr>
+                    </thead>
+                    <tbody id="sample-table">
+                        <!-- Table rows will be inserted here by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        
+            <script>
+                // Sample data
+                const samples = [
+                    { name: "Sample 1", status: "In-progress" },
+                    { name: "Sample 2", status: "In-progress" },
+                    { name: "Sample 3", status: "In-progress" },
+                    { name: "Sample 4", status: "Completed" },
+                    // Add more items as needed
+                ];
+        
+                // Reference to the table body element
+                const sampleTable = document.getElementById('sample-table');
+
+                // Function to refresh the table
+                function refreshTable() {
+                    // Clear the table body
+                    sampleTable.innerHTML = '';
+
+                    // Loop through samples and append table rows to the table body
+                    samples.forEach((sample, index) => {
+                        const tableRow = createTableRow(sample, index);
+                        sampleTable.appendChild(tableRow);
+                    });
+                }
+        
+                // Function to create a table row
+                function createTableRow(sample, index) {
+                    // Create table row element
+                    const row = document.createElement('tr');
+        
+                    // Create cells
+                    const cellIndex = document.createElement('td');
+                    cellIndex.textContent = index + 1;
+        
+                    const cellName = document.createElement('td');
+                    cellName.textContent = sample.name;
+        
+                    const cellStatus = document.createElement('td');
+                    cellStatus.textContent = sample.status;
+        
+                    const cellAction = document.createElement('td');
+                    const button = document.createElement('button');
+                    button.className = 'btn btn-inspect btn-primary';
+                    button.textContent = sample.status === 'Completed' ? 'Completed' : 'Perform inspection';
+                    cellAction.appendChild(button);
+
+                    const cellNote = document.createElement('td');
+                    if (sample.status === 'Completed') {
+                        const noteButton = document.createElement('button');
+                        noteButton.className = 'btn btn-note';
+                        noteButton.textContent = 'View Certificate';
+                        cellNote.appendChild(noteButton);
+                    }
+
+                    const cellCancel = document.createElement('td');
+                    if (sample.status !== 'Completed') {
+                        const cancelButton = document.createElement('button');
+                        cancelButton.className = 'btn btn-cancel';
+                        cancelButton.textContent = 'Cancel';
+                        cancelButton.onclick = () => {
+                            sample.status = 'Cancel';
+                            refreshTable();
+                        };
+                        cellCancel.appendChild(cancelButton);
+                    }
+        
+                    // Append cells to the row
+                    row.appendChild(cellIndex);
+                    row.appendChild(cellName);
+                    row.appendChild(cellStatus);
+                    row.appendChild(cellAction);
+                    row.appendChild(cellNote);
+                    row.appendChild(cellCancel);
+        
+                    return row;
+                }
+        
+                // Initial table rendering
+                refreshTable();
+            </script>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
