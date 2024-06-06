@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>FT-Diamond</title>
+    <link rel="stylesheet" href="home2.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <nav>
+                <a href="#">Liên Hệ</a>
+                <a href="#">Tin tức</a>
+                <a href="#">Tin Chuyên Ngành</a>
+                <div class="login">
+                    <i class="fas fa-user"></i><a href="#">Khách</a>
+                    <a href="login.html" class="logout">Logout</a>
+                </div>
+            </nav>
+        </div>
+        <div class="main-nav">
+            <div class="logo">
+                <a href="home.html"><img src="kimcuong.jpg" alt="FT-Diamond Logo"></a>
+            </div>
+            <nav>
+                <a href="#">Về FT-Diamond</a>
+                <a href="#">Dịch Vụ Giám Định</a>
+                <a href="tracuu.html">Tra Cứu</a>
+            </nav>
+            <a href="Dat_Lich_Hem.html" class="appointment-btn">Đặt Lịch Hẹn</a>
+        </div>
+    </header>
+
+    <section class="main-banner">
+        
+        <img src="kc.jpg" alt="kimcuong">
+        <img src="kc2.png" alt="kimcuong">
+    
+    </section>
+
+    <section class="appointment-form">
+        <div class="container">
+            <div class="form-header">
+                <h2>Đặt hẹn</h2>
+            </div>
+            <form id="appointment-form">
+                <label for="name">Tên khách hàng*:</label>
+                <input type="text" id="name" name="name" placeholder="Nhập tên khách hàng" required>
+
+                <label for="phone">Số điện thoại*:</label>
+                <input type="text" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+
+                <label for="id">Số CMND/CCCD*:</label>
+                <input type="text" id="id" name="id" placeholder="Nhập số CMND/CCCD" required>
+
+                <label for="address">Địa chỉ*:</label>
+                <input type="text" id="address" name="address" placeholder="Nhập địa chỉ" required>
+
+                <label for="service">Dịch vụ*:</label>
+                <select id="service" name="service" required>
+                    <option value="giảm định thường">giảm định thường</option>
+                    <option value="giảm định 3h">giảm định 3h</option>
+                    <option value="giảm định 8h">giảm định 8h</option>
+                    <option value="giảm định 12h">giảm định 12h</option>
+                </select>
+
+                <label for="quantity">Số lượng (Viên)*:</label>
+                <input type="number" id="quantity" name="quantity" placeholder="Nhập số" required>
+
+                <button type="submit">ĐẶT LỊCH</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 FT-Diamond</p>
+            <p><i class="fas fa-location"></i> 302-304 Phan Xích Long, Phường 7, Quận Phú Nhuận, TP.HCM, Việt Nam</p>
+            <p><i class="fas fa-phone"></i> 0987654125 | 190000825</p>
+        </div>
+        <div class="footer-links">
+            <a href="#">Về FT-Diamond</a>
+            <a href="#">Bộ Sưu Tập</a>
+            <a href="#">Dịch Vụ Giám Định</a>
+            <a href="#">Tra Cứu</a>
+        </div>
+    </footer>
+    <script src="Dat_Lich_Hem.js"></script>
+    
+</body>
+</html>

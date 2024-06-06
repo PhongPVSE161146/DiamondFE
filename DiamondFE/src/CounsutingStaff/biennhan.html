@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biên Bản Biên Nhận</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .account-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #6c757d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        body{
+            background-color:rgb(198, 204, 202);
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <img src="kimcuong.jpg" alt="Logo" style="height: 200px;">
+            <div class="account-icon">
+                <i class="fas fa-user"> C</i>
+            </div>
+            <div>
+                <div class="actions mt-3">
+                    <button class="btn btn-secondary" id="exportButton">Export</button>
+                </div>
+            </div>
+        </div>
+        <h3>Biên Bản Biên Nhận</h3>
+        <form id="receiptForm">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="customerName">Khách Hàng</label>
+                    <input type="text" class="form-control" id="customerName" placeholder="Nhập tên khách hàng">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="phoneNumber">Số điện thoại</label>
+                    <input type="number" class="form-control" id="phoneNumber" placeholder="NHập số điện thoại">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="address">Địa Chỉ</label>
+                    <input type="text" class="form-control" id="address" placeholder="Nhập địa chỉ">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="cccd">CCCD</label>
+                    <input type="number" class="form-control" id="cccd" placeholder="Nhập CCCD">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="sampleQuantity">Số Lượng Mẫu Cần Kiểm Định</label>
+                    <input type="number" class="form-control" id="sampleQuantity" placeholder="Nhập số lượng">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="notes">Ghi Chú</label>
+                    <input type="text" class="form-control" id="notes" placeholder="***">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="payment">Thanh Toán</label>
+                    <input type="number" class="form-control" id="payment" placeholder="Nhập số tiền thanh toán">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6 text-center">
+                    <label>Khách hàng</label>
+                    <div>..............................................</div>
+                </div>
+                <div class="form-group col-md-6 text-center">
+                    <label>Nhân viên giao dịch</label>
+                   
+                    <div>..............................................</div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('exportButton').addEventListener('click', function() {
+            if (confirm("Bạn muốn in hay lưu dữ liệu không? Bấm OK để in, Cancel hủy.")) {
+                window.print();
+            } else {
+                const formData = {
+                    customerName: document.getElementById('customerName').value,
+                    phoneNumber: document.getElementById('phoneNumber').value,
+                    address: document.getElementById('address').value,
+                    cccd: document.getElementById('cccd').value,
+                    sampleQuantity: document.getElementById('sampleQuantity').value,
+                    notes: document.getElementById('notes').value,
+                    payment: document.getElementById('payment').value,
+                };
+                
+            }
+        });
+    </script>
+</body>
+</html>

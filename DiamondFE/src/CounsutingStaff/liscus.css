@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+}
+
+.input-group {
+    flex-grow: 1;
+    max-width: 300px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.status-new {
+    color: #4a90e2;
+}
+
+.status-in-progress {
+    color: #f5a623;
+}
+
+.status-completed {
+    color: #7ed321;
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination span {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.pagination .active {
+    background-color: #5a67d8;
+    color: white;
+}
+.anhkimcuong {
+    width: 100px; /* Điều chỉnh kích thước ảnh theo ý muốn */
+    height: auto; /* Đảm bảo tỷ lệ khung hình được giữ nguyên */
+    display: block; /* Đảm bảo ảnh được căn giữa */
+    margin: 0 auto; /* Căn giữa ảnh theo chiều ngang */
+    margin-bottom: 10px; /* Khoảng cách dưới của ảnh */
+    margin-left: 10px;
+}

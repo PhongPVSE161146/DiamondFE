@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Management</title>
+    <link rel="stylesheet" href="informan.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="kimcuong.jpg" alt="Logo">
+            <h1>FT-Diamond</h1>
+        </div>
+        <div class="account-icon">
+            <i class="fas fa-user">M</i>
+        </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#"> Giám định</a></li>
+            <li><a href="#">Thống Kê</a></li>
+            <li><a href="#">Thông Tin</a></li>
+            <li><a href="#">Chi Phí</a></li>
+            <li><a href="#">Biên Bản</a></li>
+        </ul>
+    </nav>
+    <div id="giamsat">
+        <h2>Giám định</h2>
+        <div>
+            <label for="nhanvien">Nhân viên giám định:</label>
+            <select id="nhanvien">
+                <!-- Nhân viên ảo được thêm tại đây -->
+                <option value="nv1">Nhân viên 1</option>
+                <option value="nv2">Nhân viên 2</option>
+                <option value="nv3">Nhân viên 3</option>
+                <option value="nv4">Nhân viên 4</option>
+                <option value="nv5">Nhân viên 5</option>
+            </select>
+        </div>
+        <div>
+            <label for="nguoinhan">Tên Khách Hàng:</label>
+            <input type="text" id="nguoinhan" placeholder="Nhập tên khách hàng">
+            <label for="nguoinhan">Số lượng</label>
+            <input type="number" id="nguoinhan" placeholder="Nhập số lượng">
+        </div>
+        <div>
+            <button onclick="xacnhanGiamdinh()">Xác nhận giám định</button>
+            <button onclick="huyGiamdinh()">Hủy giám định</button>
+        </div>
+        <div id="thongtinGiamdinh"></div>
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+#giamsat {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+}
+
+#giamsat h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#giamsat label {
+    display: block;
+    margin-top: 10px;
+}
+
+#giamsat select, #giamsat input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#giamsat button {
+    width: 48%;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#giamsat button:first-of-type {
+    margin-right: 4%;
+}
+
+#giamsat button:hover {
+    background-color: #45a049;
+}
+
+#thongtinGiamdinh {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+#giamsat{
+    background-color: antiquewhite;
+}

@@ -1,0 +1,44 @@
+/* Custom styles for the appointment form */
+.appointment-form {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-form .header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.appointment-form .description {
+  font-size: 1rem;
+  color: #666;
+}
+
+.appointment-form .lookup-box {
+  margin-top: 1.5rem;
+}
+
+.appointment-form .lookup-box input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.appointment-form .lookup-box button {
+  margin-top: 1rem;
+   margin-bottom: 25px;
+}
+
+.appointment-form .lookup-box button a {
+  text-decoration: none;
+  color: white;
+
+}
+
+.appointment-form .lookup-box button a:hover {
+  text-decoration: none;
+  color: white;
+}

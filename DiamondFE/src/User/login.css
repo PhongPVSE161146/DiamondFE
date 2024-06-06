@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    flex: 1;
+    background-color: #f8d6d6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jewelry-img {
+    max-width: 100%;
+    height: 100%;
+}
+.kimcuong {
+    max-width: 30%;
+    height: auto;
+    width: auto;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.login-form {
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.welcome-text h2 {
+    margin-bottom: 10%;
+    font-size: 150%;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+.tab-content {
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.forgot-password {
+    display: block;
+    margin: 10px 0;
+    color: red;
+    text-decoration: none;
+}
+
+.social-login p {
+    margin: 20px 0 10px;
+}
+
+.facebook, .google {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.facebook {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.google {
+    background-color: #dd4b39;
+    color: #fff;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

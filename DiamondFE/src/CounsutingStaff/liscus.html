@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Detail</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="liscus.css">
+</head>
+<style>
+    .account-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #6c757d;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="container mt-5">
+        <div class="header mb-4">
+            <h1>List Customer Order</h1>
+            
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search...">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button">Search</button>
+                </div>
+            </div>
+               <div class="account-icon">
+                <i class="fas fa-user"> C</i>
+              </div>
+            <div class="actions mt-3">
+             
+                <button class="btn btn-primary">Import</button>
+                <button class="btn btn-secondary">Export</button>
+            </div>
+        </div>
+        <div>
+             <a href="home.html"><img  src="kimcuong.jpg" alt="kimcuong" class="anhkimcuong"></a>
+        </div>
+        <table class="table table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <th>Customer Name</th>
+                    <th>Service</th>
+                    <th>Phone Number</th>
+                    <th>Quantity of Diamond</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>
+                        <a style="color: black;" href="inforcus.html"> Elizabeth Lee</a> </td>
+                    <td><input type="text" class="form-control" value="S3H"></td>
+                    <td>0987123456</td>
+                    <td><input type="number" class="form-control" value="3"></td>
+                    <td>
+                        <select class="form-control status-selector">
+                            <option class="status-new" selected>New</option>
+                            <option class="status-in-progress">In-progress</option>
+                            <option class="status-completed">Completed</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>Jane Smith</td>
+                    <td><input type="text" class="form-control" value="S9H"></td>
+                    <td>0909876543</td>
+                    <td><input type="number" class="form-control" value="4"></td>
+                    <td>
+                        <select class="form-control status-selector">
+                            <option class="status-new" selected>New</option>
+                            <option class="status-in-progress">In-progress</option>
+                            <option class="status-completed">Completed</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>Michael Johnson</td>
+                    <td><input type="text" class="form-control" value="S12H"></td>
+                    <td>0987654321</td>
+                    <td><input type="number" class="form-control" value="2"></td>
+                    <td>
+                        <select class="form-control status-selector">
+                            <option class="status-new" selected>New</option>
+                            <option class="status-in-progress">In-progress</option>
+                            <option class="status-completed">Completed</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>Alice Johnson</td>
+                    <td><input type="text" class="form-control" value="S3H"></td>
+                    <td>0976543210</td>
+                    <td><input type="number" class="form-control" value="5"></td>
+                    <td>
+                        <select class="form-control status-selector">
+                            <option class="status-new" selected>New</option>
+                            <option class="status-in-progress">In-progress</option>
+                            <option class="status-completed">Completed</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>David Brown</td>
+                    <td><input type="text" class="form-control" value="S6H"></td>
+                    <td>0965432109</td>
+                    <td><input type="number" class="form-control" value="3"></td>
+                    <td>
+                        <select class="form-control status-selector">
+                            <option class="status-new" selected>New</option>
+                            <option class="status-in-progress">In-progress</option>
+                            <option class="status-completed">Completed</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>Emily Davis</td>
+                    <td><input type="text" class="form-control" value="S9H"></td>
+                    <td>0954321098</td>
+                    <td><input type="number" class="form-control" value="1"></td>
+                    <td>
+                        <select class="form-control status-selector">
+                            <option class="status-new" selected>New</option>
+                            <option class="status-in-progress">In-progress</option>
+                            <option class="status-completed">Completed</option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <!-- Các hàng tiếp theo giữ nguyên cấu trúc -->
+            </tbody>
+        </table>
+        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

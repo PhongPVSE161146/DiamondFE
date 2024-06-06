@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt hẹn</title>
+    <link rel="stylesheet" href="Dat_Lich_Hem.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-header">
+            <h2>Đặt hẹn</h2>
+        </div>
+        <div class="tabs">
+            <button class="tab active">Cá nhân</button>
+        </div>
+        <form id="appointment-form">
+            <label for="name">Tên khách hàng*:</label>
+            <input type="text" id="name" name="name" placeholder="Nhập tên khách hàng" required>
+
+            <label for="phone">Số điện thoại*:</label>
+            <input type="text" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+
+            <label for="id">Số CMND/CCCD*:</label>
+            <input type="text" id="id" name="id" placeholder="Nhập số CMND/CCCD" required>
+
+            <label for="address">Địa chỉ*:</label>
+            <input type="text" id="address" name="address" placeholder="Nhập địa chỉ" required>
+
+            <label for="service">Dịch vụ*:</label>
+            <select id="service" name="service" required>
+                <option value="giảm định thường">giảm định thường</option>
+                <option value="giảm định 3h">giảm định 3h</option>
+                <option value="giảm định 8h">giảm định 8h</option>
+                <option value="giảm định 12h">giảm định 12h</option>
+                <!-- Add other services if needed -->
+            </select>
+
+            <label for="quantity">Số lượng (Viên)*:</label>
+            <input type="number" id="quantity" name="quantity" placeholder="Nhập số" required>
+
+            <button type="submit">ĐẶT LỊCH</button>
+        </form>
+    </div>
+    <script src="Dat_Lich_Hem.js"></script>
+</body>
+</html>
