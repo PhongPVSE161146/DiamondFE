@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informations</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/CounsutingStaff/css/inforcus.css">
+</head>
+<body>
+    <div class="header">
+        <div class="back-button" onclick="history.back();">&larr;</div>
+        <h2>Informations Customer</h2>
+    </div>
+    <div class="content">
+        <div class="user-info mb-4">
+            <div class="account-icon">
+                <i class="fas fa-user">E</i>
+            </div>
+            <div class="user-name">Elizabeth Lee</div>
+        </div>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="text" class="form-control" id="phoneNumber" placeholder="0987123456">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="id">ID</label>
+                    <input type="text" class="form-control" id="id" placeholder="012345678910">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="address">Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="12/3 Huynh Van Luy Phuong 8, Quan 9, Ho Chi Minh">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="service">Service</label>
+                    <input type="text" class="form-control" id="service" placeholder="S3H">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="totalQuantity">Total Quantity</label>
+                    <input type="text" class="form-control" id="totalQuantity" placeholder="3">
+                </div>
+                
+            </div>
+        </form>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-2 see-detail-button">
+            <button type="button" class="btn btn-primary" id="seeDetailButton">See detail</button>
+        </div>
+    </div>
+</form>
+</div>
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script>
+document.getElementById("seeDetailButton").addEventListener("click", function() {
+    window.location.href = "totaldetail.html";
+});
+</script>
+</body>
+</html>
